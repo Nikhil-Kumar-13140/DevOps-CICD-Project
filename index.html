@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOpsX | CI/CD Automation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="bg-animation"></div>
+
+    <div class="container">
+
+        <!-- Navbar -->
+
+        <nav>
+
+            <h1>DevOpsX</h1>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#pipeline">Pipeline</a></li>
+
+                <li><a href="#tools">Tools</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Hero Section -->
+
+        <section class="hero" id="home">
+
+            <div class="left">
+
+                <h2>
+                    Next Generation
+                    <span>CI/CD Automation</span>
+                </h2>
+
+                <p>
+                    Deploy applications faster using Jenkins,
+                    Docker and GitHub automation pipelines.
+                    Experience modern DevOps workflows with
+                    automation and containerization.
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#pipeline">
+                        <button>Launch Pipeline 🚀</button>
+                    </a>
+
+                    <button class="glass-btn" onclick="openModal()">
+                        View Architecture
+                    </button>
+
+                </div>
+
+                <!-- Stats -->
+
+                <div class="stats">
+
+                    <div class="stat-box">
+                        <h3>99.9%</h3>
+                        <p>Deployment Success</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>10x</h3>
+                        <p>Faster Delivery</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>24/7</h3>
+                        <p>Automation</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="right">
+
+                <div class="circle"></div>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
+
+            </div>
+
+        </section>
+
+        <!-- Features -->
+
+        <section class="features" id="features">
+
+            <div class="card">
+
+                <h2>⚡ Fast Deployment</h2>
+
+                <p>
+                    Automated deployment pipeline reduces manual
+                    work and increases software delivery speed.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>🔒 Secure Pipeline</h2>
+
+                <p>
+                    Secure workflows with Docker containers and
+                    Jenkins automation for reliable deployments.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>☁ Cloud Ready</h2>
+
+                <p>
+                    Easily scalable infrastructure ready for
+                    cloud-native DevOps deployment.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Pipeline -->
+
+        <section class="pipeline" id="pipeline">
+
+            <h1>DevOps Workflow</h1>
+
+            <div class="workflow">
+
+                <div class="step">Developer</div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">GitHub</div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">Jenkins</div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">Docker</div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">Deployment</div>
+
+            </div>
+
+        </section>
+
+        <!-- Tools -->
+
+        <section class="features" id="tools">
+
+            <div class="card">
+
+                <h2>🐳 Docker</h2>
+
+                <p>
+                    Containerization platform for portable
+                    and scalable applications.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>⚙ Jenkins</h2>
+
+                <p>
+                    CI/CD automation server used for build,
+                    test and deployment workflows.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>🌐 GitHub</h2>
+
+                <p>
+                    Source code management platform integrated
+                    with DevOps automation pipelines.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Architecture Modal -->
+
+    <div class="modal" id="architectureModal">
+
+        <div class="modal-content">
+
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+
+            <h1>DevOps Architecture</h1>
+
+            <div class="architecture-flow">
+
+                <div class="arch-box">Developer</div>
+
+                <div class="arch-arrow">→</div>
+
+                <div class="arch-box">GitHub</div>
+
+                <div class="arch-arrow">→</div>
+
+                <div class="arch-box">Jenkins</div>
+
+                <div class="arch-arrow">→</div>
+
+                <div class="arch-box">Docker</div>
+
+                <div class="arch-arrow">→</div>
+
+                <div class="arch-box">Deployment</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function openModal(){
+
+            document.getElementById("architectureModal").style.display = "flex";
+        }
+
+        function closeModal(){
+
+            document.getElementById("architectureModal").style.display = "none";
+        }
+
+        window.onclick = function(event){
+
+            let modal = document.getElementById("architectureModal");
+
+            if(event.target == modal){
+
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
